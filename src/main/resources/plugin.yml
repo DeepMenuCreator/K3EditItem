@@ -1,0 +1,24 @@
+name: K3EditItem
+version: '${project.version}'
+main: ru.k3.edititem.K3EditItem
+api-version: '1.21'
+author: K3
+
+description: Масштабный плагин кастомных предметов с 23+ способностями и анимациями
+
+commands:
+  k3edititem:
+    description: Главная команда плагина K3EditItem
+    aliases: [k3ei, edititem]
+    usage: /k3edititem <open|create|claim|list|reload|delete> [args...]
+    permission: k3edititem.use
+
+permissions:
+  k3edititem.use:
+    description: Базовое использование команды
+    default: op
+  k3edititem.admin:
+    description: Админ права
+    default: op
+    children:
+      k3edititem.use: true

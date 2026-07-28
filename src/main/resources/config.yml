@@ -1,0 +1,134 @@
+# ═══════════════════════════════════════════════
+#  K3EditItem - Конфигурация плагина
+#  Версия: 1.0.0
+# ═══════════════════════════════════════════════
+
+settings:
+  # Префикс в чате
+  prefix: "&8[&bK3&3EditItem&8] &r"
+
+  # Автосохранение предметов (в секундах, 0 = отключено)
+  auto-save-interval: 300
+
+  # Максимальное количество способностей на один предмет
+  max-abilities-per-item: 5
+
+  # Кулдаун между использованиями способностей (в тиках, 20 = 1 сек)
+  global-cooldown: 10
+
+# Настройки анимаций
+animations:
+  # Дальность видимости частиц
+  particle-distance: 64
+
+  # Максимальное количество частиц одновременно
+  max-particles: 500
+
+# Настройки способностей
+abilities:
+  fireball:
+    damage: 6.0
+    speed: 1.5
+    explosion-power: 2.0
+
+  web-trap:
+    duration: 100
+    radius: 3
+
+  lightning:
+    damage: 8.0
+    chain-count: 3
+
+  teleport:
+    distance: 32
+    safe-landing: true
+
+  heal:
+    amount: 4.0
+    radius: 5
+
+  explosion:
+    power: 3.0
+    break-blocks: false
+    fire: false
+
+  freeze:
+    duration: 60
+    radius: 4
+
+  dash:
+    distance: 8
+    damage-on-impact: 3.0
+
+  grapple:
+    max-distance: 24
+    pull-speed: 0.8
+
+  shield:
+    duration: 100
+    damage-reduction: 0.5
+
+  poison:
+    duration: 100
+    amplifier: 1
+    radius: 3
+
+  invisibility:
+    duration: 200
+    particles: false
+
+  laser:
+    damage: 5.0
+    max-distance: 50
+    penetration: true
+
+  tornado:
+    duration: 80
+    radius: 5
+    pull-strength: 0.3
+
+  black-hole:
+    duration: 100
+    radius: 6
+    pull-strength: 0.5
+    damage: 2.0
+
+  summon:
+    entity-type: "ZOMBIE"
+    count: 3
+    duration: 300
+
+  time-stop:
+    duration: 60
+    radius: 10
+
+  meteor:
+    damage: 15.0
+    explosion-power: 4.0
+    count: 1
+
+  chain:
+    max-targets: 5
+    damage: 4.0
+    bounce-distance: 8
+
+  swap:
+    max-distance: 16
+
+  reflect:
+    duration: 80
+    reflect-chance: 0.7
+
+  berserk:
+    duration: 150
+    damage-multiplier: 2.0
+    speed-multiplier: 1.5
+
+  clone:
+    clone-count: 2
+    duration: 200
+
+  phoenix:
+    revive-health: 10.0
+    fire-resistance-duration: 400
+    cooldown: 1200
