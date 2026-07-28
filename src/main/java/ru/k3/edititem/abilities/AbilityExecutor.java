@@ -1,4 +1,4 @@
-package ru.k3.edititem.abilities;
+apackage ru.k3.edititem.abilities;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
