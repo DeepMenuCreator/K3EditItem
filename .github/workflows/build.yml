@@ -7,6 +7,10 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,3 +48,4 @@ jobs:
           - GUI редактор
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
